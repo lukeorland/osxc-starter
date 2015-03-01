@@ -1,0 +1,6 @@
+- name: OS X Customizations
+  hosts: all
+  tasks:
+    - name: Customize OS X
+      script: osx_customizations.sh
+      sudo: yes
