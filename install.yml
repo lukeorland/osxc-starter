@@ -2,18 +2,45 @@
 # Here we describe every software we may want to install
 - hosts: all
   roles:
-  - role: osxc.packages
-    brew_taps:
-    - caskroom/fonts
-    brew_packages:
-    - git
-    - zsh
-    - vim
-    - the_silver_searcher
-    - ctags
-    - reattach-to-user-namespace
-    - tmux
-    cask_packages:
-    - font-inconsolata-for-powerline
-    - iterm2
-    - macvim
+    - role: osxc.packages
+      brew_taps:
+        - caskroom/fonts
+      brew_packages:
+        - coreutils
+        - ctags
+        - git
+        - md5sha1sum
+        - reattach-to-user-namespace
+        - ssh-copy-id
+        - the_silver_searcher
+        - tmux
+        - tree
+        - vim
+        - watch
+        - wget
+        - zsh
+      cask_packages:
+        - adium
+        - caffeine
+        - dropbox
+        - evernote
+        - firefox
+        - flux
+        - font-inconsolata-for-powerline
+        - google-chrome
+        - google-drive
+        - iterm2
+        - jumpcut
+        - middleclick
+        - moom
+        - music-manager
+        - silverlight
+        - skitch
+        - skype
+        - sourcetree
+        - transmission
+        - vagrant
+        - vlc
+      brew_pkg_with_opts:
+        - { pkg: "macvim",
+            opts: "custom-icons,override-system-vim,with-lua,with-luajit,enable-pythoninterp,with-python-config-dir=/usr/lib/python2.7/config" }
