@@ -5,7 +5,9 @@
   - role: osxc.packages
     brew_taps:
     - caskroom/fonts
+    - railwaycat/emacsmacport
     brew_packages:
+    - emacs-mac
     - git
     - hub
     - zsh
