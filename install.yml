@@ -7,17 +7,17 @@
     - caskroom/fonts
     - railwaycat/emacsmacport
     brew_packages:
+    - ctags
     - emacs-mac
     - git
     - hub
-    - zsh
-    - vim
-    - the_silver_searcher
-    - ctags
     - reattach-to-user-namespace
+    - the_silver_searcher
     - tmux
     - tree
     - unrar
+    - vim
+    - zsh
     cask_packages:
     - font-inconsolata-for-powerline
     - iterm2
